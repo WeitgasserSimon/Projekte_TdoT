@@ -1,0 +1,18 @@
+fertig:
+varia
+condi
+scope
+strings
+forloops
+while
+dic
+sets & tuples
+lists
+lothar der hund 
+angefangen:
+
+
+gonix:
+
+
+

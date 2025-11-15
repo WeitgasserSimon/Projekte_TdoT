@@ -1,0 +1,39 @@
+  // Dateipfad zur CSV-Datei
+    const char *dateipfad = "deine_datei.csv";
+
+    // Datei öffnen
+    FILE *datei = fopen(dateipfad, "r");
+    if (datei == NULL) {
+        fprintf(stderr, "Fehler beim Öffnen der Datei.\n");
+        return 1;
+    }
+
+    // Liste erstellen, um Elemente aus der CSV-Datei aufzunehmen
+    ListItem meine_liste[100]; // Annahme: Maximal 100 Elemente, passe dies an deine Anforderungen an
+
+    // CSV-Datei lesen und Daten in die Liste einfügen
+    int index = 0;
+    char zeile[MAX_LINE_LENGTH];
+
+    while (fgets(zeile, MAX_LINE_LENGTH, datei) != NULL) {
+        // Zeile in einzelne Felder aufteilen
+        char *id_str = strtok(zeile, ",");
+        char *name_str = strtok(NULL, ",");
+
+        // Daten in die Liste einfügen (hier als Beispiel nur ID und Name)
+        meine_liste[index].id = atoi(id_str);
+        strcpy(meine_liste[index].name, name_str);
+
+        // Erhöhe den Index für das nächste Element in der Liste
+        index++;
+
+        // Hier kannst du weitere Felder einfügen und die Schleife entsprechend anpassen
+    }
+
+    // Schließe die Datei
+    fclose(datei);
+
+    // Jetzt enthält deine Liste die Daten aus der CSV-Datei
+    // Du kannst auf die Daten über meine_liste[index] zugreifen
+
+    return 0;

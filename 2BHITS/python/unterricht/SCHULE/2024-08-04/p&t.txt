@@ -1,0 +1,9 @@
+Erzeuge die Klassen Person und Tier in eigenen Dateien namens person.py und tier.py
+
+Die Klassen sollen jeweils drei Eigenschaften die für Personen und Tiere typisch sind besitzen und diese mit 
+setter und getter Methoden bedienen.
+
+Außerdem ist für jede Klasse eine Methode zu definieren, die spezifisch für Personen und Tiere ist. 
+z.B reden laufen etc.
+
+Daneben ist jeweils die str magic method zu implementieren

@@ -1,0 +1,6 @@
+if __name__ == '__main__':  prüfen wer die Datei aufruft 
+def variablen_und_datentypen() -> None:
+none ist der typehint also eif was es zrk gibt
+# für kommentar
+"" und '' beide string nur um das jeweils andere schreiben zu können
+mit type(x) bekommt man den datentyp

@@ -1,0 +1,18 @@
+fertig:
+varia
+condi
+scope
+strings
+forloops
+while
+
+
+lists
+angefangen:
+
+
+gonix:
+
+
+dic
+sets & tuples

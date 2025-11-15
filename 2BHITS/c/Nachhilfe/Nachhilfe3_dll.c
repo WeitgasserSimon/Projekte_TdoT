@@ -1,0 +1,1 @@
+man schreibt node_t* weil man den pointer zurück haben will
